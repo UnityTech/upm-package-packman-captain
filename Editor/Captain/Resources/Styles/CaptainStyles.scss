@@ -1,0 +1,73 @@
+// If you are using IntelliJ Rider, you can simply turn on the SCSS compiler, otherwise here is how to convert scss to uss
+//
+//		# Watch
+//				sass --watch --sourcemap=none --style=expanded --scss --no-cache CaptainStyles.scss:CaptainStyles.uss
+//
+
+
+/***************************************************************************************************
+
+														*** Auto-Generated - Do not modify .uss File ***
+
+																		Only Modify Main.scss
+
+***************************************************************************************************/
+@mixin border($top, $right, $bottom, $left) {
+	@if $top != 'auto' {border-top-width: $top;}
+	@if $left != 'auto' {border-left-width: $right;}
+	@if $bottom != 'auto' {border-bottom-width: $bottom;}
+	@if $right != 'auto' {border-right-width: $left;}
+}
+
+@mixin border-box($width: 1) {
+	@include border($width, $width, $width, $width);
+}
+
+@mixin stretchToParentSize() {
+	position-top: 0;
+	position-left: 0;
+	position-bottom: 0;
+	position-right: 0;
+	position-type: absolute;
+}
+
+$main-border-size: 2;
+
+.title {
+	font-size: 16px;
+	font-style: bold;
+}
+
+#containerPackageSets {
+	height: 65;
+
+	.row {
+		flex: 1;
+		flex-direction: row;
+	}
+}
+
+#containerRequests {
+	height: 65;
+
+	.row {
+		flex: 1;
+		flex-direction: row;
+
+		#speed {
+			width: 150;
+			height: 18;
+		}
+	}
+}
+
+.inactiveBorder {
+	@include border-box($main-border-size);
+	border-color: rgba(0, 0, 0, 0);
+}
+
+.activeBorder {
+	@include border-box($main-border-size);
+	border-color: rgba(0, 200, 0, 0.5);
+}
+

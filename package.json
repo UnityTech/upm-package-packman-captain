@@ -1,0 +1,17 @@
+{
+	"name": "com.unity.package-manager-ui",
+	"version": "0.0.1",
+	"unity": "2018.1",
+	"description": "Unity Package Manager Captain.",
+	"keywords": [
+		"package",
+		"unity"
+	],
+	"category": "QA Tools",
+	"publishConfig": {
+		"registry": "https://staging-packages.unity.com"
+	},
+	"dependencies": {
+		"com.unity.package-manager-ui" : "1.0.6"
+	}
+}

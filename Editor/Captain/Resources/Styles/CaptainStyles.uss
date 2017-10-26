@@ -1,0 +1,47 @@
+/***************************************************************************************************
+
+														*** Auto-Generated - Do not modify .uss File ***
+
+																		Only Modify Main.scss
+
+***************************************************************************************************/
+.title {
+  font-size: 16px;
+  font-style: bold;
+}
+
+#containerPackageSets {
+  height: 65;
+}
+#containerPackageSets .row {
+  flex: 1;
+  flex-direction: row;
+}
+
+#containerRequests {
+  height: 65;
+}
+#containerRequests .row {
+  flex: 1;
+  flex-direction: row;
+}
+#containerRequests .row #speed {
+  width: 150;
+  height: 18;
+}
+
+.inactiveBorder {
+  border-top-width: 2;
+  border-left-width: 2;
+  border-bottom-width: 2;
+  border-right-width: 2;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.activeBorder {
+  border-top-width: 2;
+  border-left-width: 2;
+  border-bottom-width: 2;
+  border-right-width: 2;
+  border-color: rgba(0, 200, 0, 0.5);
+}

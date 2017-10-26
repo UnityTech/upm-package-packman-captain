@@ -1,0 +1,65 @@
+<UXML xmlns:ui="UnityEngine.Experimental.UIElements">
+    <ui:VisualContainer name="main" class="inactiveBorder">
+        <ui:VisualContainer name="container">
+            <ui:Label class="title" text="Controls"/>
+
+            <ui:VisualContainer class="row">
+                <ui:Label name="refresh" text="Refresh"/>
+            </ui:VisualContainer>
+        </ui:VisualContainer>
+
+        <ui:VisualContainer name="containerPackageSets">
+            <ui:Label class="title" text="Package Sets"/>
+
+            <ui:VisualContainer class="row">
+                <ui:Label name="empty" text="Empty"/>
+                <ui:Label name="add" text="Add"/>
+                <ui:Label name="many" text="Many"/>
+                <ui:Label name="test-states" text="Test Data"/>
+                <ui:Label name="outdated" text="Outdated"/>
+                <ui:Label name="real" text="Real"/>
+            </ui:VisualContainer>
+        </ui:VisualContainer>
+
+        <ui:VisualContainer name="containerRequests">
+            <ui:Label class="title" text="Requests"/>
+
+            <ui:VisualContainer class="row">
+                <ui:Label name="refresh" text="Slow Request By:"/>
+                <ui:TextField name="speed"/>
+            </ui:VisualContainer>
+
+            <ui:VisualContainer class="row">
+                <ui:VisualContainer class="row">
+                    <ui:Label text="Add"/>
+                    <ui:Toggle name="toggleAdd" />
+                </ui:VisualContainer>
+
+                <ui:VisualContainer class="row">
+                    <ui:Label text="List"/>
+                    <ui:Toggle name="toggleList"/>
+                </ui:VisualContainer>
+
+                <ui:VisualContainer class="row">
+                    <ui:Label text="Outdated"/>
+                    <ui:Toggle name="toggleOutdated"/>
+                </ui:VisualContainer>
+
+                <ui:VisualContainer class="row">
+                    <ui:Label text="Search"/>
+                    <ui:Toggle name="toggleSearch"/>
+                </ui:VisualContainer>
+            </ui:VisualContainer>
+
+        </ui:VisualContainer>
+
+        <ui:VisualContainer name="containerRequests">
+            <ui:Label class="title" text="Force Error"/>
+
+            <ui:VisualContainer class="row">
+                <ui:Label name="update" text="Update"/>
+            </ui:VisualContainer>
+        </ui:VisualContainer>
+
+    </ui:VisualContainer>
+</UXML>
