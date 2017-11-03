@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 using UnityEditor.Experimental.UIElements;
@@ -50,7 +49,6 @@ namespace UnityEditor.PackageManager.UI.Captain
             {
                 var delay =     Utilities.IsSameOrSubclass<UpmAddOperation>(operation) && root.Q<Toggle>("toggleAdd").on || 
                                     Utilities.IsSameOrSubclass<UpmListOperation>(operation) && root.Q<Toggle>("toggleList").on ||
-                                    Utilities.IsSameOrSubclass<UpmOutdatedOperation>(operation) && root.Q<Toggle>("toggleOutdated").on ||
                                     Utilities.IsSameOrSubclass<UpmSearchOperation>(operation) && root.Q<Toggle>("toggleSearch").on; 
 
                 if (delay)
@@ -108,7 +106,7 @@ namespace UnityEditor.PackageManager.UI.Captain
         private void AddTestPackages()
         {
             // Let's setup our test factory
-            var factory = new TestOperationFactory();
+            var factory = new MockOperationFactory();
             factory.Packages = PackageSets.Instance.TestData();
           
             SetActiveMode(factory);
